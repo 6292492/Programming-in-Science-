@@ -22,13 +22,13 @@ print(f"The polar coordinates are {cartesian_to_polar(x, y)} in the polar plane"
 # Function 3 (40): Calculate the position of pendulum for (A, f, ϕ, t).
 # This function should take (A, f, ϕ, t) as input and return the position value x.
 def pendulum_position(A, f, phi, t):
-    x(t)=A*math.cos(f*t+phi)
+    x=A*math.cos(f*t+phi)
     w=2*math.pi*f
     phi=math.radians(theta)
-    return (x(t))
+    return (x)
 f=float(input("What is frequency of oscillation")) # in Hz
 phi=float(input("What is initial condition of motion"))
-A=float("What is the amplitude of the motion")
-t=float("What is the time")
+A=float(input("What is the amplitude of the motion"))
+t=float(input("What is the time"))
 print=(f"The position of the oscillatory motion at any given time is {pendulum_position(A, f, phi, t)}")
 
