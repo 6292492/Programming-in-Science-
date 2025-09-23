@@ -2,14 +2,14 @@
 
 def check_weekday_or_weekend(day_number):
 
-if 1 <= day_number <=5:
-    return "It is a Weekday!"
-elif day_number <5 or day_number >=7:
-    return "It is a Weekend!"
-else:
-    return "Not a proper day number!"
+    if 1 <= day_number <=5:
+        return "It is a Weekday!"
+    elif day_number <5 or day_number >=7:
+        return "It is a Weekend!"
+    else:
+        return "Not a proper day number!"
 
-print(day_number)
+print(f"{day_number}")
 
 
     
