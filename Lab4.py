@@ -9,8 +9,8 @@ def check_weekday_or_weekend(day_number):
     else:
         return "Not a proper day number!"
 
-print(f"{day_number}")
-
+day_number=int(input("What is the number")
+{check_weekday_or_weekend(day_number)}
 
     
   
@@ -50,5 +50,7 @@ def get_day_name(day_number):
     return "It is a Sunday!"
 
   else:
-
+      
     return "Not a proper day number!"
+day_number=int(input("What is the number")
+print(f"The day of the week is" , {get_day_name(day_number)}
