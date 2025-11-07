@@ -7,7 +7,7 @@ def read_values_from_file(filename):
         values= [float(line.strip()) for line in file]
         return np.array(values)
     return np.array([])
-print(read_values_from_file(r C:\Users\6292492\Downloads\test_values.txt"))
+print(read_values_from_file(r"C:\Users\6292492\Downloads\test_values.txtx"))
 
 # Function 2: Read Oscillatory Wave Data and Compute Statistics
 # This function reads a file containing wave data with length and amplitude values into a NumPy array.
@@ -19,11 +19,16 @@ def read_oscillatory_wave_data(filename):
     mean_amplitude=np.mean(amplitudes)
     max_amplitude=np.max(amplitudes)
     return data,mean_amplitude,max_amplitude
-print(read_oscillatory_wave_data('wave_data.csv'))
+print(read_oscillatory_wave_data(r"C:\Users\6292492\Downloads\test_oscillatory_wave.csv"))
 
 # Function 3: Read Standing Wave Data and Compute Wave Speed
 # This function reads a file containing standing wave data with length and tension values into a NumPy array.
 # It also computes the wave speed using v = sqrt(T/μ), where μ = mass per unit length (assumed to be 1 for simplicity).
 def read_standing_wave_data(filename):
-
-    return np.array([]), 0
+    data=np.loadtxt(filename,delimiter=',')
+    lenghts=data[:,0]
+    tensions=data[:,1]
+    wave_speeds=np.sqrt(tensions/lenghts)
+    
+    return data,wave_speeds
+print(read_oscillatory_wave_data(r"C:\Users\6292492\Downloads\test_standing_wave.csv"))
