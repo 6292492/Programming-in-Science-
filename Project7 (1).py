@@ -30,6 +30,7 @@ def create_plots(df):
 plt.figure(figsize=(8,4))
 sns.lineplot(data=df, hue="PatientID")
 plt.title("Concentration-time curves")
+plt.savefig(r"") # fill in later
 plt.close()
 
 # TODO cmax_hist.png (cmax is x and count is y) title is cmax distribution
